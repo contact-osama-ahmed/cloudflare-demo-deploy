@@ -5,7 +5,6 @@ export default async function Posts() {
   const posts: Post[] = await fetch(
     "https://jsonplaceholder.typicode.com/posts"
   ).then((res) => res.json());
-  console.log(posts);
   return (
     <div className="container my-5 mx-auto">
       {posts.map((post) => (
