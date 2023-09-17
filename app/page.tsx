@@ -107,9 +107,13 @@ export default function Home() {
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
-          <h5 className="w-full py-4 text-center">Welcome</h5>
         </a>
-        <Link href="/posts">Posts</Link>
+      </div>
+      <h5 className="w-full py-4 text-center text-gray-600 text-2xl font-bold">Welcome</h5>
+      <div className="flex justify-center">
+        <Link href="/posts" className="text-blue-800 text-xl font-bold">
+          Posts
+        </Link>
       </div>
     </main>
   );
