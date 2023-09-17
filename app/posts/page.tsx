@@ -9,7 +9,7 @@ export default async function Posts() {
   return (
     <div className="container my-5 mx-auto">
       {posts.map((post) => (
-        <Link href={"./posts/" + post.id} className="flex items-center gap-2">
+        <Link key={post.id} href={"./posts/" + post.id} className="flex items-center gap-2">
           <span>{post.id}</span>
           <span>{post.title}</span>
         </Link>
