@@ -1,9 +1,9 @@
-export const runtime = "edge";
+// export const runtime = "edge";
 
 import { Post } from "@/post.model";
 
 export default async function PostDetails({ params }: { params: any }) {
-  const id = params.id;
+  const { id } = params;
   const post: Post = await fetch(
     "https://jsonplaceholder.typicode.com/posts/" + id
   ).then((res) => res.json());
