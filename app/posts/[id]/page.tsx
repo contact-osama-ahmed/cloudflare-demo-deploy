@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { Post } from "@/post.model";
 
 export default async function PostDetails({ params }: { params: any }) {
