@@ -7,7 +7,7 @@ export default async function PostDetails({ params }: { params: any }) {
   const post: Post = await fetch(
     "https://jsonplaceholder.typicode.com/posts/" + id
   ).then((res) => res.json());
-  console.log(post)
+  console.log(post);
   return (
     <div className="container mx-auto py-5 h-full">
       <div className="flex gap-1">
@@ -31,5 +31,5 @@ export default async function PostDetails({ params }: { params: any }) {
 }
 
 export async function generateStaticParams() {
-  return [];
+  return [1, 2, 3];
 }
